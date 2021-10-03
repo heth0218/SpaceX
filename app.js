@@ -8,6 +8,7 @@ const fetch=require('node-fetch')
 app.listen(3000,()=>{
     console.log("listening u on port 3000, don't worry")
 })
+
 app.use(express.json({limit:'50mb'}));
 app.use(express.static('public'));
 app.use(bodyParser.json())
